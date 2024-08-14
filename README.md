@@ -2,7 +2,8 @@
 the daily used software config file and how to config.
 
 # contain software
-- [ ]  Vs code
+- [ ]  Vs code MacOS
+- [ ]  vs code Linux
 - [ ]  Neovim
 - [ ]  Tmux
 - [x]  Karabiner
