@@ -7,4 +7,5 @@ the daily used software config file and how to config.
 - [ ]  Neovim
 - [x]  Tmux
 - [x]  Karabiner
+- [x]  xremap
 - [ ]  others
