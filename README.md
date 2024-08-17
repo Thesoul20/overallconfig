@@ -5,6 +5,6 @@ the daily used software config file and how to config.
 - [ ]  Vs code MacOS
 - [x]  Vs  code Linux
 - [ ]  Neovim
-- [ ]  Tmux
+- [x]  Tmux
 - [x]  Karabiner
 - [ ]  others
