@@ -1,6 +1,34 @@
 .tmux
 =====
 
+# Own settings
+To easily navigate between different windows or panes, use the `Alt +` to realise this function weather use `prefix + C +`.
+
+The setting of navigate between windows and panes are below:
+```shell
+# insert this setting at line 93
+
+# window management
+bind -n M-w new-window -c '#{pane_current_path}'
+# break pane to window
+bind -n M-b break-pane
+# close self pane
+bind -n M-c kill-pane
+# close other pane
+bind -n M-o kill-pane -a
+# close window
+bind -n M-q kill-window
+# close other window
+bind -n M-e kill-window -a
+
+# insert this setting at line 109
+
+bind -n M-h previous-window # select previous window
+bind -n M-l next-window     # select next window
+```
+
+
+
 Self-contained, pretty and versatile `.tmux.conf` configuration file.
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/553208/19740585/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif)
