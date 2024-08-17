@@ -1,0 +1,12 @@
+# ~/.config/xremap/aligo87.yml 
+[Unit]
+Description=xremap 
+After=default.target
+
+[Service]
+Restart=always
+ExecStart=bash /home/choose/.config/xremap/main_usage_remap.sh
+ReStartSec=60
+StartLimitInterval=30
+[Install]
+WantedBy=default.target

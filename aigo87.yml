@@ -1,0 +1,38 @@
+keymap:
+  - name: all
+    remap:
+      KEY_KP1: delete
+      KEY_KP2: end
+      KEY_KP5: home
+      #CAPSLOCK: LEFTCTRL
+      C-n: left
+      C-j: down
+      C-k: up
+      C-l: right
+      C-e: end
+      C-i: home
+      C-enter: [end, enter]
+
+  - application:
+      only: [Joplin, Typora]
+    name: writer_application
+    remap:
+      C-n: left
+      C-j: down
+      C-k: up
+      C-l: right
+      C-enter: [end, enter]
+
+  - application:
+      only: [Zotero, okular]
+    name: pdf_reader
+    remap:
+      KEY_J: down
+      KEY_K: up
+      KEY_SPACE: [KEY_SPACE, up]
+
+# in this modmap, remap the single key 
+modmap:
+  - name: all
+    remap: 
+      CAPSLOCK: LEFTCTRL

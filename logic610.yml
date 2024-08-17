@@ -1,0 +1,46 @@
+modmap:
+  - name: all
+    remap:
+      CAPSLOCK: LEFTCTRL
+
+keymap:
+  - name: all
+    remap:
+      C-l: right
+      C-n: left
+      C-k: up
+      C-j: down
+      C-e: Key_end
+      C-i: Key_home
+      C-enter: [Key_end, Key_enter]
+
+  - application:
+      only: [Joplin, Typora]
+    name: writer_application
+    remap:
+      C-n: left
+      C-j: down
+      C-k: up
+      C-l: right
+      C-enter: [end, enter]
+
+  - application:
+      only: [okular]
+    name: pdf_reader
+    remap:
+      KEY_J: down
+      KEY_K: up
+      KEY_SPACE: [KEY_SPACE, up, up, up]
+
+  # - application:
+  #     only: [Zotero]
+  #   name: pdf_reader_zotero
+  #   REMAP:
+  #     KEY_J:
+  #       remap:
+  #         KEY_J: down
+  #       timeout_millis: 200
+  #     KEY_K: [up, up]
+  #     - keys: ['k', 'k']
+  #       to: "up"
+      # KEY_SPACE: [KEY_SPACE, up, up, up]

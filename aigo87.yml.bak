@@ -1,0 +1,21 @@
+keymap:
+  - name: all
+    remap:
+      KEY_KP1: delete
+      KEY_KP2: end
+      KEY_KP5: home
+      #CAPSLOCK: LEFTCTRL
+
+  - application:
+      only: [Zotero, okular]
+    name: pdf_reader
+    remap:
+      KEY_J: down
+      KEY_K: up
+      KEY_SPACE: [KEY_SPACE, up, up, up]
+
+# in this modmap, remap the single key 
+modmap:
+  - name: all
+    remap: 
+      CAPSLOCK: LEFTCTRL
