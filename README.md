@@ -8,4 +8,6 @@ the daily used software config file and how to config.
 - [x]  Tmux
 - [x]  Karabiner
 - [x]  xremap
+- [x]  espansoMac
+- [x]  espansoLinux
 - [ ]  others
