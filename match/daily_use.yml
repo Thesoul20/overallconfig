@@ -1,0 +1,29 @@
+matches:
+  - trigger: ":time"
+    replace: "{{!date +'%Y-%m-%d %H:%M:%S'}}"
+
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+    - name: mydate
+      type: date
+      params:
+        format: "%Y-%m-%d %H:%M:%S"
+
+  # - trigger: ":search"
+  #   replace: "{{searchbar}}"
+  #   vars:
+  #     - name: searchbar
+  #       type: shell
+  #       params:
+  #         cmd: "rofi -show drun"
+  #   condition: false
+  #   key: "CTRL+SPACE"
+
+  - trigger: "·"
+    replace: "`"
+    # condition: 
+    #   - app: ["Joplin", "Typora"] 
+    # filter: 
+    #   - class: ["Joplin"]
+    # key: "CTRL+SPACE"
