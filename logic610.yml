@@ -10,6 +10,7 @@ keymap:
       C-n: left
       C-k: up
       C-j: down
+      C-h: backspace
       C-e: Key_end
       C-i: Key_home
       C-enter: [Key_end, Key_enter]
@@ -31,16 +32,10 @@ keymap:
       KEY_J: down
       KEY_K: up
       KEY_SPACE: [KEY_SPACE, up, up, up]
-
-  # - application:
-  #     only: [Zotero]
-  #   name: pdf_reader_zotero
-  #   REMAP:
-  #     KEY_J:
-  #       remap:
-  #         KEY_J: down
-  #       timeout_millis: 200
-  #     KEY_K: [up, up]
-  #     - keys: ['k', 'k']
-  #       to: "up"
-      # KEY_SPACE: [KEY_SPACE, up, up, up]
+  
+  - application:
+      only: [Snipaste-2.10.6-x86_64.AppImage.Snipaste]
+    remap:
+      C-s: C-1
+      C-a: C-2
+      p: C-t
