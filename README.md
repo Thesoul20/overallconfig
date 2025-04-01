@@ -30,7 +30,8 @@ Left_control	->	left_command
 
 option + tab 
 
-
+## snipaste
+将 C-a 作为箭头的快捷键， C-s 作为矩形区域的快捷键。
 
 
 
