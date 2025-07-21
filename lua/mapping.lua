@@ -8,6 +8,15 @@ function M.core_mappings(mappings)
     maps.n["<Leader>s"] = { desc = require("astroui").get_icon("GrugFar", 1, true) .. "Search" }
     maps.v["<Leader>s"] = { desc = require("astroui").get_icon("GrugFar", 1, true) .. "Search" }
 
+    maps.i["jk"] = {"<Esc>"}
+    maps.t["jk"] = { [[<C-\><C-n>]], desc = "Exit terminal mode" }
+    -- maps.i["<C-I>"] = "<Esc>I"
+    -- maps.i["<C-E>"] = "<Esc>A"
+    -- maps.i["<C-<cr>>"] = {"<Esc>o"}
+    --
+    -- maps.n["<C-I>"] = "^"
+    -- maps.n["<C-E>"] = "$"
+
     maps.n.n = { require("utils").better_search "n", desc = "Next search" }
     maps.n.N = { require("utils").better_search "N", desc = "Previous search" }
 

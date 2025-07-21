@@ -27,7 +27,7 @@ return {
     },
   },
   opts = {
-    open_multiple_tabs = false,
+    open_multiple_tabs = true,
     floating_window_scaling_factor = {
       height = 1,
       width = 0.9,
